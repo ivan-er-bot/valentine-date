@@ -42,7 +42,7 @@ button {
 }
 
 .yes-button {
-  background-color: #ff4d6d;
+  background-color: #ff9a9e;
   color: white;
 }
 
@@ -53,7 +53,10 @@ button {
 .no-button {
   background-color: #adb5bd;
   color: white;
+  transition: opacity 0.5s ease;
 }
+
+
 
 .no-button:hover {
   transform: scale(0.95);

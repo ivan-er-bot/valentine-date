@@ -20,8 +20,17 @@ function handleNoClick() {
   const currentSize = parseFloat(
     window.getComputedStyle(yesButton).fontSize
   );
-
   yesButton.style.fontSize = `${currentSize * 1.3}px`;
+
+  // 👀 After last message, remove the NO button
+  if (messageIndex === messages.length) {
+    noButton.style.transition = "opacity 0.5s ease";
+    noButton.style.opacity = "0";
+
+    setTimeout(() => {
+      noButton.style.display = "none";
+    }, 500);
+  }
 }
 
 function handleYesClick() {
