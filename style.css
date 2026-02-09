@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -24,12 +24,15 @@ h1 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #ff4d6d;
+  font-weight: 500;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 button {
@@ -56,7 +59,9 @@ button {
   transition: opacity 0.5s ease;
 }
 
-
+p {
+  font-weight: 400;
+}
 
 .no-button:hover {
   transform: scale(0.95);
